@@ -1,0 +1,82 @@
+.White {
+    background: #fff8ec;
+    color: Black;
+    font-size: 20px;
+}
+.Dark{
+    background: #094a56;
+    color: white;
+    font-size: 20px;
+}
+.Button{
+    width: 100%;
+    display: flex;
+
+}
+.Button button{
+    width: auto;
+    height: auto;
+    background: rgba(0,0,0,0);
+    border: none;
+}
+.Button img{
+    height: 40px;
+    border-radius: 25px;
+}
+
+.Dark a{
+    color: orange;
+}
+.White a{
+    color: red;
+    background: rgba(0, 0, 0, 0.07);
+}
+
+.Dark img {
+    -webkit-box-shadow: 0px 5px 10px 10px rgba(215, 229, 92, 0.2);
+    -moz-box-shadow: 0px 5px 10px 10px rgba(215, 229, 92, 0.2);
+    box-shadow: 0px 5px 10px 10px rgba(215, 229, 92, 0.2);
+}
+
+.Dark button{
+    font-family: 'Ubuntu';
+    color: #ffffff !important;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 2px ridge #01524b;
+    background: #0a9e83;
+    background: linear-gradient(to top, rgba(4, 92, 100, 0.84), #087c73);
+}
+.Dark button:hover{
+    color: #cccccc !important;
+    background: #0a9e83;
+    background: linear-gradient(to top, #087c73, rgba(4, 92, 100, 0.84));
+}
+
+.White button{
+    font-family: 'Ubuntu';
+    color: rgba(0, 0, 0, 0.47) !important;
+    padding: 15px 25px;
+    border-radius: 5px;
+    border: 2px ridge #fff8ec;
+    background: linear-gradient(to top, rgba(255, 228, 185, 0.84), #fff8ec);
+}
+
+.White button:hover{
+    color: rgb(0, 0, 0) !important;
+    background: linear-gradient(to top, #fff8ec, rgba(255, 228, 185, 0.84));
+}
+
+.Logo{
+    text-align: center;
+    font-family: 'Redressed', cursive;
+    width: 100%;
+    font-size: 48px;
+    letter-spacing: 0px;
+    word-spacing: 0px;
+    font-weight: normal;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+}

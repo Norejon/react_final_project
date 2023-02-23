@@ -1,0 +1,31 @@
+.Page{
+margin: 20px;
+}
+.Movie{
+    display: flex;
+}
+.Info{
+    border: 1px solid black;
+    width: 100%;
+    margin-left: 20px;
+    padding: 10px;
+}
+.Genres{
+    display: flex;
+}
+.Genres a{
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid black;
+    text-decoration: none;
+    border-radius: 10px;
+}
+.Overview{
+    border: 1px solid black;
+    margin-top: 10px;
+    padding: 20px;
+
+}
+.Page img {
+    border: 5px solid black;
+}

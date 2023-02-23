@@ -1,0 +1,8 @@
+.Block{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Video{
+width: 500px;
+    height: 295px;
+}
