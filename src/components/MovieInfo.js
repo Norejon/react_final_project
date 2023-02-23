@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import {Link, Outlet, useParams} from "react-router-dom";
+import {Link, useParams} from "react-router-dom";
 import {useDispatch, useSelector} from "react-redux";
 
 import {movieActions} from "../rudux";
@@ -22,22 +22,22 @@ const MovieInfo = () => {
                 <div className={css.Page}>
                     <div className={css.Movie}>
                         <div>
-                            <img src={film && `https://image.tmdb.org/t/p/w500${film.poster_path}`}/>
+                            <img src={film.poster_path && `https://image.tmdb.org/t/p/w500${film.poster_path}`}/>
                         </div>
                         <div className={css.Info}>
-                            <div>name: {film.title} </div>
-                            <div>Date of release: {film.release_date}</div>
-                            <div className={css.Genres}>genres: {film.genres && film.genres.map(value => <Link
+                            <div><b>Name: </b>{film.title} </div>
+                            <div><b>Date of release: </b>{film.release_date}</div>
+                            <div className={css.Genres}><b>Genres: </b>{film.genres && film.genres.map(value => <Link
                                 key={value.id} to={`/${value.id}`}>{value.name}</Link>)}</div>
-                            languages:
+                            <b>languages:</b>
                             <div> {film.spoken_languages && film.spoken_languages.map(value => <div
                                 key={value.iso_639_1}>{value.name}</div>)}</div>
-                            <div>popularity: {film.popularity}</div>
-                            <div>Average vote: {film.vote_average}</div>
-                            <div>Trailers:<Videos/></div>
+                            <div><b>popularity: </b>{film.popularity}</div>
+                            <div><b>Average vote: </b>{film.vote_average}</div>
+                            <div><b>Trailers:</b><Videos/></div>
                         </div>
                     </div>
-                    <div className={css.Overview}>overview: {film.overview}</div>
+                    <b>Overview: </b><div className={css.Overview}> {film.overview}</div>
                 </div>
             </div>
         );

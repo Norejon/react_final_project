@@ -39,7 +39,6 @@ const MoviesList = () => {
 
     const filtredByGenres = films && films.filter(f => f.genre_ids.includes(Number(genre)))
 
-
     return (
         <div onMouseMove={handleSubmit(submit)}>
             <div>
@@ -55,7 +54,7 @@ const MoviesList = () => {
 
                 <hr/>
                 Пошук: <input type={"text"} placeholder={'search'} {...register('search')}
-                              onKeyUp={handleSubmit(submit)}/>
+                              onKeyUp={handleSubmit(submit)} />
 
             </div>
 

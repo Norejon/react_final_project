@@ -24,7 +24,6 @@ const MainLayout = () => {
         }
     }
 
-
     return (
         <div className={them}>
             <div className={css.Button}>

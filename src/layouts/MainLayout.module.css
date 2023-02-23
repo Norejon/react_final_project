@@ -32,6 +32,13 @@
     background: rgba(0, 0, 0, 0.07);
 }
 
+.Dark b {
+    color: #22ffe8;
+}
+.White b {
+    color: #753e23;
+}
+
 .Dark img {
     -webkit-box-shadow: 0px 5px 10px 10px rgba(215, 229, 92, 0.2);
     -moz-box-shadow: 0px 5px 10px 10px rgba(215, 229, 92, 0.2);
