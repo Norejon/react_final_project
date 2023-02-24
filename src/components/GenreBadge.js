@@ -3,6 +3,7 @@ import {useForm} from "react-hook-form";
 import {Link} from "react-router-dom";
 
 import css from './css_components/GenreBadge.module.css'
+import MoviesList from "./MoviesList";
 
 const GenreBadge = ({genre}) => {
     const {name, id} = genre
@@ -27,6 +28,7 @@ const GenreBadge = ({genre}) => {
         <div className={css.Badge} placeholder={'genres'} {...register('genres')} onClick={handleSubmit(genres)}
              onClickCapture={scroll}>
             <Link to={`/${id}`} state={{value}}>{name}</Link>
+            
         </div>
     );
 };
